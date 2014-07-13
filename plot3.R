@@ -20,7 +20,7 @@ plot3 <- function() {
     setwd(fPath)
     png("plot3.png", width = 480, height = 480)
     with(data.test, plot(dateTime, Sub_metering_1, type="l",col= "black",
-                         ylab = "Global Active Powwer (killowatts)", xlab=""))
+                         ylab = "Energy sub meeting", xlab=""))
     
     lines(dateTime, data.test$Sub_metering_2, col = "red")
     lines(dateTime, data.test$Sub_metering_3, col = "blue")
