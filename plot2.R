@@ -17,7 +17,7 @@ plot2 <- function() {
         
     #construct the plot
     with(data.test, plot(dateTime, Global_active_power, type="l",
-                            ylab = "Global Active Powwer (killowatts)"))
+                            ylab = "Global Active Powwer (killowatts)", xlab = ""))
     
     setwd(fPath)
     dev.copy(png, filename = "plot2.png")
